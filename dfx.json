@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "core_prj": {
-      "main": "src/core_prj/main.mo",
+    "minter": {
+      "main": "src/minter/main.mo",
       "type": "motoko"
     },
-    "core_prj_assets": {
+    "minter_assets": {
       "dependencies": [
-        "core_prj"
+        "minter"
       ],
       "frontend": {
-        "entrypoint": "src/core_prj_assets/src/index.html"
+        "entrypoint": "src/minter_assets/src/index.html"
       },
       "source": [
-        "src/core_prj_assets/assets",
-        "dist/core_prj_assets/"
+        "src/minter_assets/assets",
+        "dist/minter_assets/"
       ],
       "type": "assets"
     }
